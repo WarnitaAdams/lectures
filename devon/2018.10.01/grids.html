@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grids</title>
+
+    <style>
+    /* Start of grid_1  */
+      .grid-container-1{
+                display: grid;
+                /*Creating columns*/
+                grid-template-columns: auto auto;
+        
+                /* Creating spaces between item or blocks */
+                grid-gap: 15px;
+                background-color: blueviolet;
+                color: white;
+                padding: 10px;
+            }
+            
+        .grid-container-1 > div {
+                 background-color: black;
+                 text-align: center;
+                 padding: 20px 0;
+                 font-size: 24px;
+            }
+        
+        .item-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+        }
+
+        .item-2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 450px;
+        }
+    /* End of grid_1 */
+
+    /* Start of grid_2 */
+        .grid-container-2{
+                display: grid;
+                /*Creating columns*/
+                grid-template-columns: auto auto;
+        
+                /* Creating spaces between item or blocks */
+                grid-gap: 15px;
+                background-color: blue;
+                color: white;
+                padding: 10px;
+            }
+            
+        .grid-container-2 > div {
+                 background-color: black;
+                 text-align: center;
+                 padding: 20px 0;
+                 font-size: 24px;
+            }
+
+        .item-3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 200px;
+        }
+
+        .item-4{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 200px;
+        }
+    /* End of grid_2 */
+
+    /* Start of grid_3 */
+        .grid-container-3{
+                display: grid;
+                /*Creating columns*/
+                grid-template-columns: auto auto;
+        
+                /* Creating spaces between item or blocks */
+                grid-gap: 15px;
+                background-color: green;
+                color: white;
+                padding: 10px;
+            }
+            
+        .grid-container-3 > div {
+                 background-color: black;
+                 text-align: center;
+                 padding: 20px 0;
+                 font-size: 24px;
+            }
+
+        .item-5 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 200px;
+        }
+
+        .item-6 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 200px;
+        }
+    /* End of grid_3 */
+
+    /* Start of grid_4 */
+        .grid-container-4{
+            display: grid;
+            /*Creating columns*/
+            grid-template-columns: auto auto;
+            
+            /* Creating spaces between item or blocks */
+            grid-gap: 15px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+                
+        .grid-container-4 > div {
+            background-color: black;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .item-7{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+       
+    /* End of grid_4 */
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container-1">
+        <div class="item-1">
+            Col 1
+        </div>
+        <div class="item-2">
+            Col 2
+        </div>
+    </div>
+        
+    <div class="grid-container-2">
+        <div class="item-3">
+            Col 3
+        </div>
+        <div class="item-4">
+            Col 4
+        </div>
+    </div>
+
+    <div class="grid-container-3">
+            <div class="item-5">
+                Col 5
+            </div>
+            <div class="item-6">
+                Col 6
+            </div>
+    </div>
+
+    <div class="grid-container-4">
+            <div class="item-7">
+                Col 7
+            </div>
+    </div> 
+
+
+</body>
+</html>

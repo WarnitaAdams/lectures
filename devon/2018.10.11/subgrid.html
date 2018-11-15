@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids - Sub-Grids</title>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #e6ecf0;
+        }
+        .main-container {
+            margin: 0 50px;
+        }
+        
+        /* Nav Bar */
+        .grid-nav {
+            display: grid;
+            grid-template-columns: 300px 24px 350px;
+            grid-gap: 10px;
+            background-color: #1b95e0;
+            height: 40px;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            padding: 6px 50px;
+        }
+        
+        .grid-nav > div {
+            background-color: rgba(255, 255, 255);
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        
+
+        /* Main Grid */
+        .grid-container-1 {
+            display: grid;
+            grid-template-columns: 1fr 50% 1fr;
+            grid-gap: 10px;
+            background-color: #1b95e0;
+            padding: 10px;
+        }
+        .grid-container-1 > div {
+            background-color: rgba(255, 255, 255);
+        }
+        .sub-1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            height: fit-content;
+        }
+        .sub-2 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            height: fit-content;
+        }
+        .sub-3 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            height: fit-content;
+        }
+
+        .left-panel{
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            background-color: #1b95e0
+        }
+
+        .left-panel> div{
+            display: grid;
+            background-color: white;
+            padding: 20px 0;
+        }
+
+        .left-section-1{
+            height: 214px;
+        }
+
+        .left-section-2{
+            height: 400px;
+        }
+        
+        .middle-content{
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            background-color: #1b95e0
+        }
+
+        .middle-content > div{
+            display: grid;
+            background-color: white;
+            padding: 20px 0;
+
+        }
+
+        .middle-post-1{
+            height: 300px;
+        }
+
+        .middle-post-2{
+            height: 350px;
+        }
+
+        .right-panel{
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            background-color: #1b95e0
+        }
+
+        .right-panel> div{
+            display: grid;
+            background-color: white;
+            padding: 20px 0;
+        }
+
+        .right-section-1{
+            height: 380px;
+        }
+
+        .right-section-2{
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="grid-nav">
+            <div class="nav-section-left">
+
+            </div>
+            <div class="nav-section-middle">
+                
+            </div> 
+            <div class="nav-section-right">
+                
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+
+        <!-- Main Grid Container. Each div directly linked to the parent will be used as a sub grid -->
+        <div class="grid-container-1">
+
+            <!-- Sub-1 - Is a grid item of grid-container-1 -->
+            <div class="sub-1">
+
+                <div class="left-panel">
+                    <div class="left-section-1">
+
+                    </div>
+                    <div class="left-section-2">
+
+                    </div>
+                </div>
+
+               
+
+            </div>
+
+            <!-- Sub-2 - Is a grid item of grid-container-1 -->
+            <div class="sub-2">
+                <div class="middle-content">
+                    <div class="middle-section-search">
+
+                    </div>
+                    <div class="middle-post-1">
+                        
+                    </div>
+                    <div class="middle-post-2">
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sub-3 - Is a grid item of grid-container-1 -->
+            <div class="sub-3">
+                    <div class="right-panel">
+                            <div class="right-section-1">
+        
+                            </div>
+                            <div class="right-section-2">
+        
+                            </div>
+                    </div>
+
+            </div>  
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+body{ 
+  margin: 10px;
+}
+
+h1{
+  background-color: aqua
+}
+
+.navbar{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: aquamarine
+}
+
+.friends{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/*Media Queries*/
+
+/*@media only screen and (min-width: 480px){
+
+  html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+   nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px), only screen and (min-width:700px) and (orientaion:landscape){
+
+.title {
+  float: left;
+  font-size: 1.4 em;
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+
+nav a {
+  padding:15px 1%;
+}
+
+.main article {
+  float: right;
+  width: 38%;
+}
+
+.main aside {
+  float: right;
+  width: 38%
+}
+
+
+}*/
+
