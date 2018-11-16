@@ -38,12 +38,43 @@
 //     Function actions
 // }
 
-var name = prompt("Enter your name");
+// var name = prompt("Enter your name");
 
-function greetingUser() {
-    console.log("Hello " + name);
+// function greetingUser() {
+//     console.log("Hello " + name);
+// }
+
+// greetingUser();
+
+/* ===
+
+// Declaring a function called myFunction
+function myFunction(){
+    Function actions
 }
 
-greetingUser();
+=== */
 
+// The keyword return indicates that a return value will be given, which is specified immediately after the word.
 
+// Example!
+// function sayHello() 
+// {
+//     return "Hello!";
+// }
+
+// console.log("Start of program");
+// let result = sayHello();
+// console.log(result);
+// console.log("End of program");
+
+// Declare myFunction
+// function myFunction(){
+//     // calculate return value
+//     // ...
+//     return returnValue;
+// }
+
+// Get return value from myFuntion
+// var value = myFunction();
+//  ...
