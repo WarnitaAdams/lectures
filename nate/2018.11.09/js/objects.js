@@ -2,6 +2,7 @@
 
 // a material that can be seen or touched
 // something that as form
+// A collection of properties within a variable...
 
 // var pen = {
 //     color:"black",
@@ -29,19 +30,19 @@
 // Creating an object
 // Here is the JavaScript representation of a blue Bic ballpoint pen
 
-let pen = {
-    type: "ballpoint",
-    color: "blue",
-    brand: "Bic"
-};
+// let pen = {
+//     type: "ballpoint",
+//     color: "blue",
+//     brand: "Bic"
+// };
 
-console.log(pen.type); 
-console.log(pen.color);
-console.log(pen.brand); 
+// console.log(pen.type); 
+// console.log(pen.color);
+// console.log(pen.brand); 
 
 // Create a new object in JavaScript by setting its properties within a pair of curly brackets { ... };
 
-console.log("I have a " + pen.type +  " pen."); 
+// console.log("I have a " + pen.type +  " pen."); 
 
 // Since you now know how to access properties, you can start to combine
 
@@ -54,15 +55,87 @@ Lets create a cake in JavaScript that has several properties:
 
 === */ 
 
+// let cake = {
+//     type : "round",
+//     occasion : "birthday",
+//     flavor1 : "chocolate",
+//     flavor2 : "vanilla",
+//     frosting : "chocolate",
+//     topping : "strawberries",
+//     number : "two",
+//     price : "R300",
+// };
+
+
+// console.log("My cake shall be a " + cake.type, cake.occasion + " cake." + " It will have " + cake.number + " layers. The first layer will be " + cake.flavor1 + " and the second layer will be " + cake.flavor2 + " and the whole cake will be covered in " + cake.frosting + ". There will also be " + cake.topping + " on top of it.");
+
+// Methods on objects
+
+// We had to write lengthy console.log statements each time to show the cake discription. There's a clearer way to accomplish this.
+
+// Adding a method to an object
+
+// Describe a cake
+
+// function descibe(cake){
+//     var description = "The " + cake.occasion + " cake has a " + cake.flavor1 + " flavour, " + cake.number + " layers, and costs " + cake.price + ".";
+//     return description;
+// }
+
+// console.log(descibe(cake));
+
+//  The function describe() takes an object as a parameter. We pass it the cake, and it accessses that object's properties and prints them out in that sentence.
+
+// Now for an alternative approach: creating a describe property
+
+// let cake = {
+//     type : "round",
+//     occasion : "birthday",
+//     flavor1 : "chocolate",
+//     flavor2 : "vanilla",
+//     frosting : "chocolate",
+//     topping : "strawberries",
+//     number : "two",
+//     price : "R300",
+
+// // Describe the cake
+// describe: function (){
+//     var description = "The " + this.occasion + " cake has a " + this.flavor1 + " flavor, " + this.layers + " layers, and costs " + this.price + ".";
+//     return description;
+//     }
+// },
+
+// console.log(cake.describe())
+// // This cake is actually for a wedding!
+
+// cake.occasion = "wedding";
+
+
+
+
 let cake = {
-    type : "round",
-    occasion : "birthday",
-    flavor1 : "chocolate",
-    flavor2 : "vanilla",
-    frosting : "chocolate",
-    topping : "strawberries",
-    number : "two",
+    flavor: "sweet-vanilla & caramel",
+    layers: 5,
+    price: "R300",
+    occasion: "birthday",
+
+    // Describe the cake
+
+    descibe: function (){
+        var description = "The " + this.occasion + " cake has a " + this.flavor + " flavor, " + this.layers + " layers, and costs " + this.price + ".";
+        return description;
+    }
 };
 
+console.log(cake.descibe());
 
-console.log("My cake shall be a " + cake.type, cake.occasion + " cake." + " It will have " + cake.number + " layers. The first layer will be " + cake.flavor1 + " and the second layer will be " + cake.flavor2 + " and the whole cake will be covered in " + cake.frosting + ". There will also be " + cake.topping + " on top of it.");
+// The cake is actually for a wedding!
+cake.occasion = "wedding";
+
+// Now our object has a new property available to it describe. The value of the property is a function that returns a text description of the cake.
+
+// A property whose value is a function is called a method.
+
+/* ===
+Remember the parentheses, even if it's empty, when calling a method.
+=== */
