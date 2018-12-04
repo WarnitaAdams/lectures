@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+
+    Create a html file, create a p with some text, describing what document object module is, below the p, you must have two button, one a blue one, the second being red. When you click on the blue button the color should change to blue for the p. Same goes for the red.n js, change color, var.
+
+    <br>
+    <hr> -->
+
+    <style>
+    .red{
+        background-color: red;
+        color: white;
+    }
+
+    .black{
+        background-color: black;
+        color: white;
+    }
+
+    .blue{
+        background-color:blue;
+        color: white;
+    }
+    </style>
+    <div id="change_color">
+            <p>The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure where in each node is an object representing a part of the document.</p>
+
+                <!-- <button class="red" ondblclick="red()">Change text to red</button>
+                <button class="black" onclick="black()">Change text back to black</button>
+                <button class="blue" onclick="blue()">Change text to blue</button> -->
+
+                <button type="button" class="blue" ondblclick="changeColor('blue');">Change the text to blue</button>
+
+                <button type="button" class="black" onclick="changeColor('black');">Change the text to black</button>
+
+                <button type="button" class="red" onclick="changeColor('red');">Change the text to red</button>
+
+                <!-- <p id="text">
+                        modifying documents after they finished  loading-add new content to a page, change the color of an element to reflect a changing state, or remove an element the user does not need anymore..
+                        <br>
+                        interact with your users- whether ticking a box, commenting on a blog post or submit a text form, your users need to be able to communicate with you..
+                        <br>
+                        js allows them to do so;send and receive data to and from external APIs harness the power of the the thousands of useful APIs that already exist or plug your frontend app into your own custom back end.
+                      </p>
+                     <button type="button" class="red" onclick="changeColor('red');"> im red
+                     </button>
+                 
+                     <button type="button" class="blue" ondblclick="changeColor('blue');"> double click me
+                        </button>
+                 
+                        <button type="button" class="red" onkeydown="changeColor('green');"> press down arrow or key
+                        </button>
+                 
+                        <button type="button" class="blue" onmouseover="changeColor('purple');"> hover me
+                           </button>
+                 
+                           <button type="button" class="red" onkeyup="changeColor('teal');"> press up arrow or key
+                        </button>
+                 
+                        <button type="button" class="blue" onkeypress="changeColor('gold');"> press any key
+                           </button> -->
+    </div>
+
+    <script src="js/dom.js"></script>
+</body>
+</html>
