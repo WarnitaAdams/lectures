@@ -15,8 +15,8 @@
     <hr> -->
 
     <style>
-    .red{
-        background-color: red;
+    .blue{
+        background-color:blue;
         color: white;
     }
 
@@ -25,10 +25,33 @@
         color: white;
     }
 
-    .blue{
-        background-color:blue;
+    .red{
+        background-color: red;
         color: white;
     }
+
+    .pink{
+        background-color: pink;
+        color: white;
+    }
+
+    .green{
+        background-color: green;
+        color: white;
+    }
+
+    .purple{
+        background-color: purple;
+        color: white;
+    }
+
+    .lightgrey{
+        background-color: lightgrey;
+        color: white;
+    }
+    
+
+    
     </style>
     <div id="change_color">
             <p>The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure where in each node is an object representing a part of the document.</p>
@@ -37,36 +60,20 @@
                 <button class="black" onclick="black()">Change text back to black</button>
                 <button class="blue" onclick="blue()">Change text to blue</button> -->
 
-                <button type="button" class="blue" ondblclick="changeColor('blue');">Change the text to blue</button>
+                <button type="button" class="blue" ondblclick="changeColor('blue');">Double click to change the text to blue</button>
 
                 <button type="button" class="black" onclick="changeColor('black');">Change the text to black</button>
 
                 <button type="button" class="red" onclick="changeColor('red');">Change the text to red</button>
 
-                <!-- <p id="text">
-                        modifying documents after they finished  loading-add new content to a page, change the color of an element to reflect a changing state, or remove an element the user does not need anymore..
-                        <br>
-                        interact with your users- whether ticking a box, commenting on a blog post or submit a text form, your users need to be able to communicate with you..
-                        <br>
-                        js allows them to do so;send and receive data to and from external APIs harness the power of the the thousands of useful APIs that already exist or plug your frontend app into your own custom back end.
-                      </p>
-                     <button type="button" class="red" onclick="changeColor('red');"> im red
-                     </button>
+                <button type="button" class="pink" onkeypress="changeColor('pink');"> Click button and press any key</button> 
+
+                <button type="button" class="green" onkeydown="changeColor('green');">Click button and press down arrow or key</button>
                  
-                     <button type="button" class="blue" ondblclick="changeColor('blue');"> double click me
-                        </button>
+                <button type="button" class="purple" onmouseover="changeColor('purple');"> hover me</button>
                  
-                        <button type="button" class="red" onkeydown="changeColor('green');"> press down arrow or key
-                        </button>
-                 
-                        <button type="button" class="blue" onmouseover="changeColor('purple');"> hover me
-                           </button>
-                 
-                           <button type="button" class="red" onkeyup="changeColor('teal');"> press up arrow or key
-                        </button>
-                 
-                        <button type="button" class="blue" onkeypress="changeColor('gold');"> press any key
-                           </button> -->
+                <button type="button" class="lightgrey" onkeyup="changeColor('lightgrey');">Click button and press up arrow or key</button>
+                     
     </div>
 
     <script src="js/dom.js"></script>
